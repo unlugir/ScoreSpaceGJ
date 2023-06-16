@@ -100,6 +100,9 @@ Material:
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
+    - _WobbleDist: 0.05
+    - _WobbleFreq: 1
+    - _WoobleSpeed: 0.5
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
@@ -110,4 +113,5 @@ Material:
     - _FresnelColor: {r: 17.468315, g: 5.0537257, b: 16.844404, a: 1}
     - _InteriorColour: {r: 0.010349083, g: 1.319508, b: 1.3039843, a: 1}
     - _InteriorPosition: {r: 0, g: 0, b: 0, a: 0}
+    - _Vector3: {r: 8.92, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
