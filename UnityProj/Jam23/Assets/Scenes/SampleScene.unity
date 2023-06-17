@@ -298,8 +298,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.2895632, y: -0.000000016469242, z: 0.0000000049823354, w: 0.9571589}
-  m_LocalPosition: {x: -0.00000052725557, y: 27.645988, z: -25.321512}
+  m_LocalRotation: {x: 0.4170838, y: -0.0000000184164, z: -0.000000016957808, w: 0.9088681}
+  m_LocalPosition: {x: 0, y: 47.829994, z: -38.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -550,8 +550,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583520069}
-  m_LocalRotation: {x: 0.2895632, y: -0.000000016469242, z: 0.0000000049823354, w: 0.9571589}
-  m_LocalPosition: {x: -0.00000052725557, y: 27.645988, z: -25.321512}
+  m_LocalRotation: {x: 0.4170838, y: -0.0000000184164, z: -0.000000016957808, w: 0.9088681}
+  m_LocalPosition: {x: 0, y: 47.829994, z: -38.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 671658423}
   - component: {fileID: 671658422}
   - component: {fileID: 671658421}
+  - component: {fileID: 671658425}
   m_Layer: 0
   m_Name: AirPlane
   m_TagString: Untagged
@@ -659,6 +660,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 67.289, y: 0, z: 0}
+--- !u!114 &671658425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671658420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da0d87fa01565540862f079024b0859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 29685315}
+  speed: 5
+  rotateSpeed: 35
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,8 +770,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 6.66, z: -10}
+  m_BindingMode: 3
+  m_FollowOffset: {x: 0.00000052725557, y: -10.934549, z: -33.67662}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
