@@ -1249,6 +1249,8 @@ GameObject:
   m_Component:
   - component: {fileID: 752733329}
   - component: {fileID: 752733330}
+  - component: {fileID: 752733331}
+  - component: {fileID: 752733332}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1288,6 +1290,31 @@ MonoBehaviour:
   airplane: {fileID: 1507291079}
   menuCamera: {fileID: 1832615409}
   gameCamera: {fileID: 583520070}
+--- !u!114 &752733331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752733328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b69a9690b47a1c45984f3f410e09663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &752733332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752733328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db84de76baabfb4d956072bc3e2e02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressBtn: {fileID: 230527688}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
