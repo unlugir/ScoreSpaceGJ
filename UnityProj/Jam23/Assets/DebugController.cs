@@ -20,10 +20,10 @@ public class DebugController : MonoBehaviour
 
         if (hor != 0)
         {
-            transform.Rotate(new Vector3(0, 0, -hor * rotateSpeed * Time.deltaTime));
+            transform.Rotate(new Vector3(0, hor * rotateSpeed * Time.deltaTime, 0));
         }
 
         transform.RotateAround(planet.transform.position ,this.transform.right, speed * Time.deltaTime);
-        
+        //transform.LookAt(planet.transform, -this.transform.up);
     }
 }
