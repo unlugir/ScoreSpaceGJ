@@ -3,53 +3,77 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
+using Coherence;
+using Coherence.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [SerializeField] CoherenceMonoBridge bridge;
     [SerializeField] Transform idlePosition;
     [SerializeField] Transform startPosition;
-    [SerializeField] DebugController airplane;
-
     [SerializeField] CinemachineVirtualCamera menuCamera;
     [SerializeField] CinemachineVirtualCamera gameCamera;
+
+    DebugController localAirplane;
 
     private void Awake()
     {
         Instance = this;
     }
-    private void Start()
+    public void OnConnected(CoherenceMonoBridge bridge)
     {
-        SetPlaneIdlePosition();
+        StartCoroutine(ConnectedCoroutine());
     }
+
+    IEnumerator ConnectedCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        var connection = bridge.ClientConnections.GetMine();
+        
+        localAirplane = connection.GameObject.GetComponent<DebugController>();
+        gameCamera.Follow = localAirplane.cameraFollow;
+        gameCamera.LookAt = localAirplane.transform;
+        StartMenu();
+    }
+    public void OnDisconnected(CoherenceMonoBridge bridge)
+    {
+        MenuController.Instance.HideAll();
+        Destroy(localAirplane.gameObject);
+    }
+
     private void SetPlaneStartPosition()
     {
         menuCamera.Priority = 0;
         gameCamera.Priority = 10;
+
         var seq = DOTween.Sequence();
-        airplane.ResetPlane();
-        seq.Append(airplane.transform.DOMove(startPosition.position, 1f));
-        seq.Join(airplane.transform.DORotate(startPosition.rotation.eulerAngles, 1f));
-        seq.AppendCallback(() => airplane.enabled = true);
+        localAirplane.GetComponent<CoherenceSync>().SendCommand(typeof(DebugController), nameof(localAirplane.ResetPlane), MessageTarget.All);
+
+        seq.Append(localAirplane.transform.DOMove(startPosition.position, 1f));
+        seq.Join(localAirplane.transform.DORotate(startPosition.rotation.eulerAngles, 1f));
+        seq.AppendCallback(() => localAirplane.enabled = true);
 
     }
     private void SetPlaneIdlePosition()
     {
         menuCamera.Priority = 10;
         gameCamera.Priority = 0;
-        airplane.enabled = false;
-        airplane.transform.position = idlePosition.position;
-        airplane.transform.rotation = idlePosition.rotation;
+        localAirplane.enabled = false;
+        localAirplane.transform.position = idlePosition.position;
+        localAirplane.transform.rotation = idlePosition.rotation;
     }
     public void StartGame()
     {
         SetPlaneStartPosition();
+        MenuController.Instance.ShowHUD();
     }
     public void StartMenu()
     {
         SetPlaneIdlePosition();
-        airplane.ResetPlane();
+        //add delay here
+        localAirplane.GetComponent<CoherenceSync>().SendCommand(typeof(DebugController), nameof(localAirplane.ResetPlane), MessageTarget.All);
         MenuController.Instance.ShowMenu();
     }
 }

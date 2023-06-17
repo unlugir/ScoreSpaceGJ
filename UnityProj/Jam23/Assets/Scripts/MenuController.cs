@@ -16,20 +16,26 @@ public class MenuController : MonoBehaviour
     }
     void Start()
     {
-        menuPanel.SetActive(true);
-        hud.SetActive(false);
+        HideAll();
         playBtn.onClick.AddListener(OnPlayClick);
     }
     public void ShowMenu()
     {
         menuPanel.SetActive(true);
         hud.SetActive(false);
-
     }
-    private void OnPlayClick()
+    public void HideAll() 
+    {
+        menuPanel.SetActive(false);
+        hud.SetActive(false);
+    }
+    public void ShowHUD()
     {
         menuPanel.SetActive(false);
         hud.SetActive(true);
+    }
+    private void OnPlayClick()
+    {
         GameManager.Instance.StartGame();
     }
 
