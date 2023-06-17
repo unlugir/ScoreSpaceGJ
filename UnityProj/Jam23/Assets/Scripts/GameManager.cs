@@ -21,8 +21,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        menuCamera.Priority = 10;
-        gameCamera.Priority = 0;
+        SetPlaneIdlePosition();
     }
     private void SetPlaneStartPosition()
     {
