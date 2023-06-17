@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         menuCamera.Priority = 0;
         gameCamera.Priority = 10;
         var seq = DOTween.Sequence();
+        airplane.ResetPlane();
         seq.Append(airplane.transform.DOMove(startPosition.position, 1f));
         seq.Join(airplane.transform.DORotate(startPosition.rotation.eulerAngles, 1f));
         seq.AppendCallback(() => airplane.enabled = true);
@@ -38,13 +39,18 @@ public class GameManager : MonoBehaviour
     {
         menuCamera.Priority = 10;
         gameCamera.Priority = 0;
-        var seq = DOTween.Sequence();
         airplane.enabled = false;
-        seq.Append(airplane.transform.DOMove(idlePosition.position, 1f));
-        seq.Join(airplane.transform.DORotate(idlePosition.rotation.eulerAngles, 1f));
+        airplane.transform.position = idlePosition.position;
+        airplane.transform.rotation = idlePosition.rotation;
     }
     public void StartGame()
     {
         SetPlaneStartPosition();
+    }
+    public void StartMenu()
+    {
+        SetPlaneIdlePosition();
+        airplane.ResetPlane();
+        MenuController.Instance.ShowMenu();
     }
 }
