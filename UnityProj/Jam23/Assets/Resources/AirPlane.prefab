@@ -181,12 +181,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  rotateSpeed: 150
+  rotateSpeed: 250
   explosion: {fileID: 1167628609211755579}
   model: {fileID: 1365822735875588245}
   cameraFollow: {fileID: 1365822735126159823}
   fuel: 100
-  fuelConsumption: 15
+  fuelConsumption: 1
   isAlive: 0
 --- !u!114 &1365822736174915305
 MonoBehaviour:
@@ -312,7 +312,7 @@ MonoBehaviour:
     lodLevels:
     - distance: 0
     archetypeName: AirPlane_09976bcb73301c3418068123caa6a5c5
-    GeneratesArchetypeDefinition: 0
+    GeneratesArchetypeDefinition: 1
   InterpolationLocation: 1
   bakedScriptType: Coherence.Generated.CoherenceSyncAirPlane, Assembly-CSharp
   approveAuthorityTransferRequests: 1
