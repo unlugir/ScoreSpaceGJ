@@ -2,7 +2,11 @@ using UnityEngine;
 
 public abstract class Item : MonoBehaviour
 {
-    public string Name { get; }
-    public float Score { get; }
-    public abstract void OnItemPickedUp(DebugController plane);
+    public virtual string Name { get; } = "Item";
+    public virtual int Score { get; } = 0;
+
+    public virtual void OnItemPickedUp(DebugController plane)
+    {
+        GameManager.Instance.scoreController.AddNewScore(Score);
+    }
 }
