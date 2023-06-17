@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 7416536dbe0334cfd888dd1beb75a9fb, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 656058fe318eb48558d21d66d1a79a2b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11884108, g: 0.18339348, b: 0.32976314, a: 1}
+  m_IndirectSpecularColor: {r: 0.06361822, g: 0.052069563, b: 0.056787517, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e0afa60be017c64ea407c320866098d, type: 2}
+  - {fileID: 2100000, guid: a6c1c980c10fd93408021f22e94ecdcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1557,7 +1557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29d2be054391894a96bafd5f479dc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 1215395421967941289, guid: 3028bdafdc13c1c4a911990395bbbce8, type: 3}
+  spawn: {fileID: 3244224328857449173, guid: 3028bdafdc13c1c4a911990395bbbce8, type: 3}
   sphereCollider: {fileID: 29685312}
 --- !u!4 &1131384277
 Transform:

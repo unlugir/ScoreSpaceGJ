@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject spawn;
+    [SerializeField] private Item spawn;
     [SerializeField] private SphereCollider sphereCollider;
 
     public void Start()
     {
         for (int inex = 0; inex < 10; inex++)
         {
-            SpawnItemInRandomPoint(spawn);
+            SpawnItemInRandomPoint(spawn.gameObject);
         }
     }
 

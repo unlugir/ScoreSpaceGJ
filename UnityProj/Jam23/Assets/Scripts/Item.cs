@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public interface Item
+public abstract class Item : MonoBehaviour
 {
     public string Name { get; }
-    public void OnItemPickedUp(DebugController plane);
+    public float Score { get; }
+    public abstract void OnItemPickedUp(DebugController plane);
 }
