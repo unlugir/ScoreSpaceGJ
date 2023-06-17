@@ -9,18 +9,20 @@ public class DebugController : MonoBehaviour
     [SerializeField] float rotateSpeed;
     [SerializeField] ParticleSystem explosion;
     [SerializeField] GameObject model;
+    
     public float fuel;
+    public float startFuel;
     public float fuelConsumption;
     public bool isAlive;
-    // Start is called before the first frame update
+    
+    
     void Start()
     {
-        
     }
 
     public void ResetPlane()
     {
-        fuel = 100;
+        fuel = startFuel;
         isAlive = true;
         explosion.gameObject.SetActive(false);
         model.gameObject.SetActive(true);
