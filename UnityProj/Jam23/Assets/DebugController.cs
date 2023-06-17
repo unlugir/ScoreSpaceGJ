@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class DebugController : MonoBehaviour
@@ -52,6 +54,18 @@ public class DebugController : MonoBehaviour
         transform.RotateAround(planet.transform.position ,this.transform.right, speed * Time.deltaTime);
         //transform.LookAt(planet.transform, -this.transform.up);
     }
+
+    public void OnTriggerEnter(Collider collider)
+    {
+        Debug.Log(collider.gameObject.name);
+        if (collider.TryGetComponent<Item>(out var collectedItem))
+        {
+            collectedItem.OnItemPickedUp(this);
+            collider.gameObject.transform.DOScale(Vector3.zero, 0.2f).OnComplete(
+                ()=> Destroy(collider.gameObject));
+        }
+    }
+
     IEnumerator DeathCoroutine()
     {
         yield return new WaitForSeconds(2);
