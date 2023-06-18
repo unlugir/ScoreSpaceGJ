@@ -1360,7 +1360,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 2042713254}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 0309c7b1baa0b2a47a9032dedab0990c, type: 2}
   post: {fileID: 21300000, guid: 6aae67b1f141658409553a4beca06eb3, type: 3}
 --- !u!1 &60134586
 GameObject:
