@@ -15,9 +15,9 @@ public class ItemSpawner : MonoBehaviour
 
     public void SpawnItemInRandomPoint(GameObject item)
     {
-        Vector3 randomPoint = Random.onUnitSphere * sphereCollider.radius * (sphereCollider.gameObject.transform.localScale.x + 1.2f);
+        Vector3 randomPoint = Random.onUnitSphere * sphereCollider.radius * (sphereCollider.gameObject.transform.localScale.x + 1.3f);
             
         var spawnedItem = Instantiate(item, randomPoint, Quaternion.identity, gameObject.transform);
-        spawnedItem.transform.LookAt(sphereCollider.transform.position);
+        spawnedItem.transform.LookAt(sphereCollider.transform.position,Vector3.right);
     }
 }
