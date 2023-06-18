@@ -15,6 +15,7 @@ public class PostCollector : MonoBehaviour
     {
         if(image == null) return;
 
+        gameObject.transform.DOKill();
         gameObject.transform.DOMoveY(startPos,
             .25f).OnComplete(() =>
         {
