@@ -72,6 +72,7 @@ public class DebugController : MonoBehaviour
 
     public void OnTriggerEnter(Collider collider)
     {
+        if (sync == null || !sync.IsMyClientConnection) return;
         Debug.Log(collider.gameObject.name);
         if (collider.TryGetComponent<Item>(out var collectedItem))
         {
