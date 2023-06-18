@@ -207,6 +207,8 @@ MonoBehaviour:
       lodStepsActive: 1
     - component: {fileID: 2128241350961002375}
       lodStepsActive: 1
+    - component: {fileID: 4339191865046399107}
+      lodStepsActive: 1
     lodLevels:
     - distance: 0
     archetypeName: AirPlane_09976bcb73301c3418068123caa6a5c5
@@ -523,6 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1365822736499124771}
   - component: {fileID: 1365822736499124770}
+  - component: {fileID: 4339191865046399107}
   m_Layer: 0
   m_Name: Trail
   m_TagString: Untagged
@@ -662,6 +665,18 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &4339191865046399107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365822736499124768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b20db4406f8936479d9d87a25fef6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1365822735170020185
 PrefabInstance:
   m_ObjectHideFlags: 0
