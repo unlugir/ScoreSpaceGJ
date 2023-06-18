@@ -49,7 +49,7 @@ public class ItemSpawner : MonoBehaviour
     public void SpawnItemInRandomCountry()
     {
         var spawnableContries = countries.Where(c => c.hasItem == false).ToList();
-        var country = countries[Random.Range(0, spawnableContries.Count - 1)];
+        var country = countries[Random.Range(0, spawnableContries.Count)];
         var spawnedItem = Instantiate(stamp, country.transform.position, Quaternion.identity, gameObject.transform);
 
         spawnedItem.transform.LookAt(sphereCollider.transform.position, Vector3.right);
