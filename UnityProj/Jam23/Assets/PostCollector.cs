@@ -12,13 +12,16 @@ public class PostCollector : MonoBehaviour
 
     public void ShowAnimation(Sprite image)
     {
-        gameObject.transform.DOMove(endPos,
+        if(image == null) return;
+        
+        
+        gameObject.transform.DOLocalMove(endPos,
             .25f).OnComplete(() => { ShowPostal(image);});
     }
 
     public void HideAnimation()
     {
-        gameObject.transform.DOMove(startPos,
+        gameObject.transform.DOLocalMove(startPos,
             .25f);
     }
 

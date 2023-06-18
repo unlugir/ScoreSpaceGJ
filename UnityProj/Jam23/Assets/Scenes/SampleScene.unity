@@ -1361,7 +1361,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 6aae67b1f141658409553a4beca06eb3, type: 3}
 --- !u!1 &60134586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +1934,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: b3a2c7b6023b6c04f92b4e35d3b54fa4, type: 3}
 --- !u!1001 &95348153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2581,7 +2581,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: c672344d2a73ab44fa7336012beeef72, type: 3}
 --- !u!1001 &144026886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2869,7 +2869,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 060da220281a0fd478ba140f14bda40c, type: 3}
 --- !u!1 &188202617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3831,7 +3831,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 526a7226581ed0343a692de6101e161e, type: 3}
 --- !u!1 &245483251
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,7 +6109,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: ddcb075dd60e1164f8060c401fbd9cf1, type: 3}
 --- !u!1 &481326770
 GameObject:
   m_ObjectHideFlags: 0
@@ -7408,7 +7408,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: b39a0da50ce60b840a8b6ee5fd476d4d, type: 3}
 --- !u!1 &609266147
 GameObject:
   m_ObjectHideFlags: 0
@@ -7809,7 +7809,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: d149b282e7f20904b9c428e150be8a86, type: 3}
 --- !u!1001 &640760078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10165,7 +10165,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
 --- !u!1 &885467544
 GameObject:
   m_ObjectHideFlags: 0
@@ -12470,7 +12470,7 @@ MonoBehaviour:
   petrol: {fileID: 1337687508767849459, guid: bbd22fc023296374bb1ada113128ee6a, type: 3}
   stamp: {fileID: 3720873210853900683, guid: a5a8f0d8543edfa47ba43286c2e06713, type: 3}
   sphereCollider: {fileID: 29685312}
-  _postCollector: {fileID: 0}
+  _postCollector: {fileID: 1203109683}
   countries:
   - {fileID: 871822982}
   - {fileID: 473390630}
@@ -13687,7 +13687,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 2a42a5b7279a732498eaafdefb1f0fb9, type: 3}
 --- !u!1 &1206148076
 GameObject:
   m_ObjectHideFlags: 0
@@ -13881,7 +13881,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 8c165d18a16f88b4095277f84c1f11c4, type: 3}
 --- !u!1 &1226856803
 GameObject:
   m_ObjectHideFlags: 0
@@ -14434,7 +14434,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: e8dd07daa8e4f89489d1997504b6bb50, type: 3}
 --- !u!1 &1284759190
 GameObject:
   m_ObjectHideFlags: 0
@@ -18274,7 +18274,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 38b13ae6489cd784f92e5987a4433eff, type: 3}
 --- !u!1 &1605466765
 GameObject:
   m_ObjectHideFlags: 0
@@ -18346,7 +18346,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 3ff453bfac50cf04d947e3785334007e, type: 3}
 --- !u!1001 &1621114894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20691,7 +20691,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: d46bd8fcee120154197cf53252adb8cc, type: 3}
 --- !u!1 &1813606244
 GameObject:
   m_ObjectHideFlags: 0
@@ -21719,7 +21719,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 7eb9613c36d0a27449c42b64458fbd3c, type: 3}
 --- !u!1 &1931050027
 GameObject:
   m_ObjectHideFlags: 0
@@ -21791,7 +21791,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: 80339533e2c182f4a9b06543debd7506, type: 3}
 --- !u!1 &1931744233
 GameObject:
   m_ObjectHideFlags: 0
@@ -21863,7 +21863,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: c5662f58946182c4ba18d786d80007ab, type: 3}
 --- !u!1 &1945457592
 GameObject:
   m_ObjectHideFlags: 0
@@ -22987,7 +22987,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
   - {fileID: 8300000, guid: ad13697713ff16b46ab0958dcfe08105, type: 3}
   - {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  post: {fileID: 0}
+  post: {fileID: 21300000, guid: f5f422ff635d4c44cb6dc1589af92d54, type: 3}
 --- !u!1 &2033832988
 GameObject:
   m_ObjectHideFlags: 0
