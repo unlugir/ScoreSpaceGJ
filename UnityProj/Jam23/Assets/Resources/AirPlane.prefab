@@ -84,7 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: 
   speed: 40
-  rotateSpeed: 250
+  rotateSpeed: 200
   explosion: {fileID: 1167628609211755579}
   model: {fileID: 9056728188745201687}
   cameraFollow: {fileID: 1365822735126159823}
