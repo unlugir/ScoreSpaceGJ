@@ -10,8 +10,8 @@ public class LeaderBoard : MonoBehaviour
     {
         pressBtn.onClick.AddListener(() =>
         {
-            string memberID = "20";
-            int leaderboardID = 123;
+            string memberID = "Dima";
+            int leaderboardID = 15225;
             int score = 1000;
         
             LootLockerSDKManager.SubmitScore(memberID, score, leaderboardID, (response) =>

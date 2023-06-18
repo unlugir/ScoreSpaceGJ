@@ -16,7 +16,7 @@ MonoBehaviour:
   token: 
   adminToken: 
   refreshToken: 
-  domainKey: 2112hpxu
+  domainKey: 53fy6nkl
   gameID: 0
   game_version: 0.0.0.1
   deviceID: 
@@ -29,4 +29,4 @@ MonoBehaviour:
   baseUrl: https://2112hpxu.api.lootlocker.io
   clientSideRequestTimeOut: 5
   currentDebugLevel: 0
-  allowTokenRefresh: 0
+  allowTokenRefresh: 1
