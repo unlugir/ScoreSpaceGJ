@@ -1,3 +1,6 @@
+component AirPlane_DebugController_1365822736174915302
+  playerName String [bits "6"]
+
 command AirPlane_DebugController__char_46_KillPlane_369f8701_4372_4e48_a006_a9d3b5f7e8d6 [routing "All"]
 
 command AirPlane_DebugController__char_46_ResetPlane_1c0d4ec9_5375_42c3_afd5_8a9c1180e7ed [routing "All"]
@@ -8,4 +11,6 @@ archetype AirPlane_09976bcb73301c3418068123caa6a5c5
       value [compression "None"]
     WorldOrientation 
       value [bits "32"]
+    AirPlane_DebugController_1365822736174915302 
+      name [bits "6"]
 

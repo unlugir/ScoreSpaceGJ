@@ -16,7 +16,7 @@ namespace Coherence.Generated
 
 	public class Definition : IDefinition
 	{
-		public const string schemaId = "1297fd23f7cc6ac19e51abc3f48a8919bad9e94d";
+		public const string schemaId = "59089923a4bb0be371fc6865d92c192c695ded1b";
 		public const uint InternalWorldPosition = 0;
 		public const uint InternalWorldOrientation = 1;
 		public const uint InternalLocalUser = 2;
@@ -119,8 +119,10 @@ namespace Coherence.Generated
 		public const uint InternalGenericFieldULong3 = 99;
 		public const uint InternalGenericFieldColor0 = 100;
 		public const uint InternalGenericFieldColor1 = 101;
-		public const uint InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldPosition_LOD0 = 102;
-		public const uint InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldOrientation_LOD0 = 103;
+		public const uint InternalAirPlane_DebugController_1365822736174915302 = 102;
+		public const uint InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldPosition_LOD0 = 103;
+		public const uint InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldOrientation_LOD0 = 104;
+		public const uint InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_AirPlane_DebugController_1365822736174915302_LOD0 = 105;
 		public const uint InternalAuthorityRequest = 0;
 		public const uint InternalAuthorityTransfer = 1;
 		public const uint InternalQuerySynced = 2;
@@ -233,8 +235,10 @@ namespace Coherence.Generated
 			{ 99, "GenericFieldULong3" },
 			{ 100, "GenericFieldColor0" },
 			{ 101, "GenericFieldColor1" },
-			{ 102, "ArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldPosition_LOD0" },
-			{ 103, "ArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldOrientation_LOD0" },
+			{ 102, "AirPlane_DebugController_1365822736174915302" },
+			{ 103, "ArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldPosition_LOD0" },
+			{ 104, "ArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldOrientation_LOD0" },
+			{ 105, "ArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_AirPlane_DebugController_1365822736174915302_LOD0" },
 		};
 
 		public static string ComponentNameForTypeId(uint typeId)
@@ -460,10 +464,14 @@ namespace Coherence.Generated
 					return GenericFieldColor0.Deserialize(inProtocolStream);
 				case InternalGenericFieldColor1:
 					return GenericFieldColor1.Deserialize(inProtocolStream);
+				case InternalAirPlane_DebugController_1365822736174915302:
+					return AirPlane_DebugController_1365822736174915302.Deserialize(inProtocolStream);
 				case InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldPosition_LOD0:
 					return WorldPosition.DeserializeArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldPosition_LOD0(inProtocolStream);
 				case InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldOrientation_LOD0:
 					return WorldOrientation.DeserializeArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_WorldOrientation_LOD0(inProtocolStream);
+				case InternalArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_AirPlane_DebugController_1365822736174915302_LOD0:
+					return AirPlane_DebugController_1365822736174915302.DeserializeArchetypeAirPlane_09976bcb73301c3418068123caa6a5c5_AirPlane_DebugController_1365822736174915302_LOD0(inProtocolStream);
 				default:
 					return (null, 0, 0);
 			}
@@ -779,6 +787,9 @@ namespace Coherence.Generated
 					break;
 				case InternalGenericFieldColor1:
 					GenericFieldColor1.Serialize((GenericFieldColor1)data, mask, protocolStream);
+					break;
+				case InternalAirPlane_DebugController_1365822736174915302:
+					AirPlane_DebugController_1365822736174915302.Serialize((AirPlane_DebugController_1365822736174915302)data, mask, protocolStream);
 					break;
 			}
 		}

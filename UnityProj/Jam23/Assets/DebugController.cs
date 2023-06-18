@@ -6,9 +6,14 @@ using UnityEngine;
 using Coherence;
 using Cinemachine;
 using Coherence.Toolkit;
+using Coherence.UI;
 
 public class DebugController : MonoBehaviour
 {
+    [Sync]
+    [Tooltip("Gets loaded with `Coherence.UI.NetworkDialog.PlayerName` (from the owner of this Entity).")]
+    public string playerName;
+
     Transform planet;
     [SerializeField] float speed;
     [SerializeField] float rotateSpeed;
@@ -26,6 +31,10 @@ public class DebugController : MonoBehaviour
         if (planet == null)
             planet = GameObject.Find("Planet").transform;
         sync = GetComponent<CoherenceSync>();
+        if (sync != null && sync.IsMyClientConnection)
+        {
+            playerName = NetworkDialog.PlayerName;
+        }
     }
 
     [Command]
