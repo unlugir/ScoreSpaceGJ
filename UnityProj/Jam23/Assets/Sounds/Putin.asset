@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Putin
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 65aa8d24f550379409e79bb48847a484, type: 3}
-  volume: 0.6
+  volume: 0.3
