@@ -29,7 +29,6 @@ public class PlayerSession : MonoBehaviour
             members = response.items;
         });
     }
-
     public void SendRecordToLeaderBoard(string playerName, int score)
     {
         LootLockerSDKManager.SubmitScore(playerName, score, leaderboardID, (response) =>
