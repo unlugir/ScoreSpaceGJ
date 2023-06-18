@@ -10,8 +10,9 @@ public class StampItem : Item
     public override void OnItemPickedUp(DebugController plane)
     {
         base.OnItemPickedUp(plane);
-        country.hasItem = false;
+        Debug.Log($"Country {Time.time}");
         ItemSpawner.Instance.OnContryItemPickUp(country);
+        country.hasItem = false;
         //UI STUFF
     }
 }

@@ -25,14 +25,14 @@ public class ItemSpawner : MonoBehaviour
         }
         for(int i = 0; i < contriesCount; i++)
         {
-            SpawnItemInRandomCountry();
+            SpawnItemInRandomCountryExcept(null);
         }
     }
 
     public void OnContryItemPickUp(Country country)
     {
         AudioManager.Instance.PlayClip(country.GetRandomClip());
-        SpawnItemInRandomCountry();
+        SpawnItemInRandomCountryExcept(country);
     }
     public void OnPetrolPickUp()
     {
@@ -46,14 +46,16 @@ public class ItemSpawner : MonoBehaviour
         var spawnedItem = Instantiate(item, randomPoint, Quaternion.identity, gameObject.transform);
         spawnedItem.transform.LookAt(sphereCollider.transform.position,Vector3.right);
     }
-    public void SpawnItemInRandomCountry()
+    public void SpawnItemInRandomCountryExcept(Country c)
     {
         var spawnableContries = countries.Where(c => c.hasItem == false).ToList();
-        var country = countries[Random.Range(0, spawnableContries.Count)];
-        var spawnedItem = Instantiate(stamp, country.transform.position, Quaternion.identity, gameObject.transform);
-
+        if (c != null && spawnableContries.Contains(c))
+            spawnableContries.Remove(c);
+        var country = spawnableContries[Random.Range(0, spawnableContries.Count)];
+        country.hasItem = true;
+        var spawnedItem = Instantiate(stamp, country.stampPosition.position, Quaternion.identity, gameObject.transform);
         spawnedItem.transform.LookAt(sphereCollider.transform.position, Vector3.right);
         stamp.country = country;
-        country.hasItem = true;
+        
     }
 }

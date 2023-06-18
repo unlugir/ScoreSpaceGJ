@@ -14,6 +14,11 @@ public class Country : MonoBehaviour
         if (stampPosition == null)
             stampPosition = this.transform;
     }
+    private void OnDrawGizmos()
+    {
+        if (stampPosition == null) return;
+        Gizmos.DrawSphere(stampPosition.position, 1f);
+    }
     public Sound GetRandomClip()
     {
         if (clips == null || clips.Length == 0) return null;
