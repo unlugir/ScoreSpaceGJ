@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Yamete
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: bf28c9d43919b5f4584fd62bc826904a, type: 3}
-  volume: 0.5
+  volume: 0.3
