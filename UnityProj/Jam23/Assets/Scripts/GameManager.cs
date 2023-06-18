@@ -5,6 +5,7 @@ using DG.Tweening;
 using Cinemachine;
 using Coherence;
 using Coherence.Toolkit;
+using Cysharp.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
 {
@@ -76,8 +77,13 @@ public class GameManager : MonoBehaviour
     public void StartMenu()
     {
         SetPlaneIdlePosition();
-        //add delay here
+        
         localAirplane.GetComponent<CoherenceSync>().SendCommand(typeof(DebugController), nameof(localAirplane.ResetPlane), MessageTarget.All);
-        MenuController.Instance.ShowMenu();
+        StartCoroutine(Delay(1f, MenuController.Instance.ShowMenu));
+    }
+    IEnumerator Delay(float time, System.Action callback)
+    {
+        yield return new WaitForSeconds(time);
+        callback?.Invoke();
     }
 }
