@@ -14,6 +14,7 @@ public class ItemSpawner : MonoBehaviour
     [SerializeField] private Item petrol;
     [SerializeField] private StampItem stamp;
     [SerializeField] private SphereCollider sphereCollider;
+    [SerializeField] private PostCollector _postCollector;
     [SerializeField] private List<Country> countries;
     [SerializeField] int petrolCount;
     [SerializeField] int contriesCount;
@@ -32,6 +33,7 @@ public class ItemSpawner : MonoBehaviour
 
     public void OnContryItemPickUp(Country country)
     {
+        _postCollector.ShowAnimation(country.post);
         AudioManager.Instance.PlayClip(country.GetRandomClip());
         StartCoroutine(Delay(1, ()=> SpawnItemInRandomCountryExcept(country)));
     }

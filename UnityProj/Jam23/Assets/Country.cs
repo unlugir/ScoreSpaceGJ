@@ -8,6 +8,7 @@ public class Country : MonoBehaviour
     public bool hasItem;
     public Transform stampPosition;
     [SerializeField] Sound[] clips;
+    public Sprite post;
 
     private void Start()
     {
