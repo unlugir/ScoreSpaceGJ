@@ -8237,7 +8237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668811431}
   m_LocalRotation: {x: -0.16805549, y: -0.3634343, z: 0.007501961, w: 0.91630596}
-  m_LocalPosition: {x: -0.08, y: 1.91, z: -1.03}
+  m_LocalPosition: {x: -3.631, y: 0.403, z: -0.636}
   m_LocalScale: {x: 0.9999999, y: 0.99999976, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12586,7 +12586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   petrol: {fileID: 1337687508767849459, guid: bbd22fc023296374bb1ada113128ee6a, type: 3}
-  stamp: {fileID: 3720873210853900683, guid: a5a8f0d8543edfa47ba43286c2e06713, type: 3}
+  stamp: {fileID: 775737099516679258, guid: 96da2e129ff9bbe45b65e7e28298ed37, type: 3}
   sphereCollider: {fileID: 29685312}
   _postCollector: {fileID: 1203109683}
   countries:
