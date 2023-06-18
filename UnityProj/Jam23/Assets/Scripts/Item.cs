@@ -7,6 +7,7 @@ public abstract class Item : MonoBehaviour
 
     public virtual void OnItemPickedUp(DebugController plane)
     {
+        AudioManager.Instance.PlayPickSound();
         GameManager.Instance.scoreController.AddNewScore(Score);
     }
 }
