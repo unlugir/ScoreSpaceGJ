@@ -3960,6 +3960,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245483251}
   m_CullTransparentMesh: 1
+--- !u!1 &247350494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 247350495}
+  m_Layer: 5
+  m_Name: Jump
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &247350495
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247350494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 420310517}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -163, y: 214}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &248620349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5692,6 +5728,7 @@ RectTransform:
   - {fileID: 1286936910}
   - {fileID: 1574192275}
   - {fileID: 1645975067}
+  - {fileID: 247350495}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13037,6 +13074,7 @@ MonoBehaviour:
   textUgui: {fileID: 740191532}
   startPos: -295
   endPos: 295
+  jumpPos: {fileID: 247350494}
 --- !u!1001 &1205502413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13642,12 +13680,12 @@ PrefabInstance:
     - target: {fileID: 8397819164142459846, guid: 356df2fdc05054d879bcdd9ae0534951,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8397819164142459846, guid: 356df2fdc05054d879bcdd9ae0534951,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -166.2162
+      value: -166.21619
       objectReference: {fileID: 0}
     - target: {fileID: 8869868259801043722, guid: 356df2fdc05054d879bcdd9ae0534951,
         type: 3}
@@ -16145,6 +16183,7 @@ GameObject:
   - component: {fileID: 1413530416}
   - component: {fileID: 1413530418}
   - component: {fileID: 1507291079}
+  - component: {fileID: 1507291080}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -17241,6 +17280,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1507291080
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413530412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 0
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &1511758634
 PrefabInstance:
   m_ObjectHideFlags: 0

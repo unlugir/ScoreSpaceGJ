@@ -26,6 +26,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text playerInGameText;
     public DebugController localAirplane;
 
+    public async void ShakeCamera()
+    {
+        var perlin = gameCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        perlin.m_AmplitudeGain = 6;
+        perlin.m_FrequencyGain = 6;
+        await UniTask.Delay(1000);
+        
+        perlin.m_AmplitudeGain = 0;
+        perlin.m_FrequencyGain = 0;
+    }
+
     private void Awake()
     {
         Instance = this;

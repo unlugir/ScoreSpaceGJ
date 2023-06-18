@@ -97,6 +97,7 @@ public class DebugController : MonoBehaviour
 
     IEnumerator DeathCoroutine()
     {
+        GameManager.Instance.ShakeCamera();
         yield return new WaitForSeconds(2);
         GameManager.Instance.StartMenu();
         GameManager.Instance.SaveScore();
