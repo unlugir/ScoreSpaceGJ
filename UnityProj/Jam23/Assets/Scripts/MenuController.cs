@@ -7,9 +7,11 @@ public class MenuController : MonoBehaviour
 {
     public static MenuController Instance { get; private set; }
     [SerializeField] GameObject menuPanel;
+    [SerializeField] LeaderBoardDisplayer leaderBoardDisplayer;
     [SerializeField] GameObject[] gameHud;
 
     [SerializeField] Button playBtn;
+    [SerializeField] Button leaderBoardBtn;
     private void Awake()
     {
         Instance = this;
@@ -24,6 +26,7 @@ public class MenuController : MonoBehaviour
         
         HideAll();
         playBtn.onClick.AddListener(OnPlayClick);
+        leaderBoardBtn.onClick.AddListener(leaderBoardDisplayer.ShowLeaderBoard);
     }
     public void ShowMenu()
     {
