@@ -34,9 +34,14 @@ public class GameManager : MonoBehaviour
     }
     private void RefreshPlayersList(CoherenceClientConnection connection)
     {
+        StartCoroutine(RefreshList());
+    }
+    IEnumerator RefreshList()
+    {
+        yield return new WaitForSeconds(1f);
         playerInGameText.text = "";
         System.Text.StringBuilder builder = new System.Text.StringBuilder();
-        foreach(var conn in bridge.ClientConnections.GetAll())
+        foreach (var conn in bridge.ClientConnections.GetAll())
         {
             if (conn.GameObject == null) continue;
             if (!conn.GameObject.TryGetComponent<DebugController>(out var controller)) continue;

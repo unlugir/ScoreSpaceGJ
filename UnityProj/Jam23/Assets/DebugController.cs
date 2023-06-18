@@ -41,6 +41,7 @@ public class DebugController : MonoBehaviour
     public void ResetPlane()
     {
         fuel = startFuel;
+        fuelConsumption = 1;
         isAlive = true;
         explosion.gameObject.SetActive(false);
         model.gameObject.SetActive(true);
@@ -49,6 +50,7 @@ public class DebugController : MonoBehaviour
     public void KillPlane()
     {
         fuel = 0;
+        fuelConsumption = 1;
         isAlive = false;
         explosion.gameObject.SetActive(true);
         model.gameObject.SetActive(false);
@@ -72,6 +74,7 @@ public class DebugController : MonoBehaviour
     }
     void UpdateFuel()
     {
+        fuelConsumption += 0.05f * Time.deltaTime;
         fuel -= fuelConsumption * Time.deltaTime;
         if (fuel <= 0)
         {
