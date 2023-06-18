@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
 
     private void SetPlaneStartPosition()
     {
+        AudioManager.Instance.PlayTakeOffSound();
         menuCamera.Priority = 0;
         gameCamera.Priority = 10;
 

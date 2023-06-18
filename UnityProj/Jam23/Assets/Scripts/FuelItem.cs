@@ -10,5 +10,6 @@ public class FuelItem : Item
     {
         base.OnItemPickedUp(plane);
         plane.fuel = Mathf.Clamp(plane.fuel + fuelToRestore, 0, plane.startFuel);
+        ItemSpawner.Instance.OnPetrolPickUp();
     }
 }
