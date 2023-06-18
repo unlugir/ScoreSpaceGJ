@@ -10,6 +10,7 @@ public class PostCollector : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textUgui;
     [SerializeField] private float startPos;
     [SerializeField] private float endPos;
+    [SerializeField] private GameObject jumpPos;
 
     public async void ShowAnimation(Sprite image)
     {
@@ -20,7 +21,7 @@ public class PostCollector : MonoBehaviour
             .25f).OnComplete(() =>
         {
             ShowPostal(image);
-            gameObject.transform.DOMoveY(endPos,
+            gameObject.transform.DOMoveY(jumpPos.transform.position.y,
                 .25f).OnComplete(() => { });
         }); 
         await UniTask.Delay(5000);
