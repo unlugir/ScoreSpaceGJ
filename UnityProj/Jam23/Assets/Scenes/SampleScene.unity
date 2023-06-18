@@ -15236,7 +15236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286936909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -18841,7 +18841,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 1314674213}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 7ea435189a744a64a9d96feeef47577d, type: 2}
   post: {fileID: 21300000, guid: 38b13ae6489cd784f92e5987a4433eff, type: 3}
 --- !u!1 &1605466765
 GameObject:
@@ -20151,19 +20151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Player
-
-    Tester
-
-    Developer
-
-    Unlugir
-
-    Zelfstan
-
-    Anime
-
-'
+  m_text: Players
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41be9023fd718ea45a7185a4ccb9bed2, type: 2}
   m_sharedMaterial: {fileID: 1135375428515378033, guid: 41be9023fd718ea45a7185a4ccb9bed2,
