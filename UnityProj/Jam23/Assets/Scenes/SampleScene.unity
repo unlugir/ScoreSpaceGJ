@@ -601,7 +601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   m_LocalRotation: {x: -0.3672975, y: -0.3242566, z: 0.679292, w: -0.5463631}
-  m_LocalPosition: {x: 22.906904, y: 0.83858967, z: -1.7828443}
+  m_LocalPosition: {x: 25.351429, y: -1.6385365, z: -1.7828468}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1410,7 +1410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022425611}
   m_LocalRotation: {x: 0.07682399, y: -0.70431966, z: 0.04435454, w: 0.7043185}
-  m_LocalPosition: {x: -3.2031333, y: 1.1563027, z: 0.8644231}
+  m_LocalPosition: {x: -3.3311558, y: 1.8944979, z: 0.89872617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1581,7 +1581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29d2be054391894a96bafd5f479dc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 3244224328857449173, guid: 3028bdafdc13c1c4a911990395bbbce8, type: 3}
+  spawn: {fileID: 1337687508767849459, guid: bbd22fc023296374bb1ada113128ee6a, type: 3}
   sphereCollider: {fileID: 29685312}
 --- !u!4 &1131384277
 Transform:
@@ -2375,7 +2375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380272965}
   m_LocalRotation: {x: 0.00000011212826, y: 0.0000008309683, z: -0.71177495, w: 0.70240766}
-  m_LocalPosition: {x: -2.444524, y: 2.4771261, z: 0.0000025068991}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
