@@ -1,5 +1,6 @@
 using System;
 using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using LootLocker.Requests;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,7 +19,14 @@ public class LeaderBoardDisplayer : MonoBehaviour
 
     public void CloseLeaderBoard()
     {
-        gameObject.SetActive(false);
+        
+        gameObject.transform.localScale = Vector3.one;
+        gameObject.transform.DOScale(Vector3.zero, 0.2f).OnComplete(() =>
+        {
+            gameObject.transform.localScale = Vector3.one;
+            gameObject.SetActive(false);
+        });
+        
         for (int index = 0; index < parentSpawner.transform.childCount; index++)
         {
             Destroy(parentSpawner.transform.GetChild(index).gameObject);
@@ -28,6 +36,13 @@ public class LeaderBoardDisplayer : MonoBehaviour
     public async void ShowLeaderBoard()
     {
         gameObject.SetActive(true);
+        gameObject.transform.localScale = Vector3.zero;
+        gameObject.transform.DOScale(Vector3.one, 0.2f).OnComplete(() =>
+        {
+            gameObject.transform.localScale = Vector3.one;
+            gameObject.SetActive(true);
+        });
+
         PlayerSession.Instance.GetLeaderBoardInfo(maxOnPage);
         
         await UniTask.WaitUntil(()=> PlayerSession.Instance.members != null 
