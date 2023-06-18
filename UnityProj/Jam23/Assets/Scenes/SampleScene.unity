@@ -2576,7 +2576,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 1116215522}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 709e785474094c7439702a911594093c, type: 2}
   post: {fileID: 21300000, guid: c672344d2a73ab44fa7336012beeef72, type: 3}
 --- !u!1001 &144026886
 PrefabInstance:
@@ -7432,7 +7432,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 208331007}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 75446f492d9f5a542b26f03372433036, type: 2}
   post: {fileID: 21300000, guid: b39a0da50ce60b840a8b6ee5fd476d4d, type: 3}
 --- !u!1 &609266147
 GameObject:
@@ -14418,7 +14418,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 1557971840}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: df6fc1039bd3f5047853585af70b03f6, type: 2}
   post: {fileID: 21300000, guid: 8c165d18a16f88b4095277f84c1f11c4, type: 3}
 --- !u!1 &1226856803
 GameObject:
@@ -14969,7 +14969,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 124436093}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 8d14c34c57da2bb4381756cc9375c8f7, type: 2}
   post: {fileID: 21300000, guid: e8dd07daa8e4f89489d1997504b6bb50, type: 3}
 --- !u!1 &1284759190
 GameObject:
