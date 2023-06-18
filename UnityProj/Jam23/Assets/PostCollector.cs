@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -7,21 +8,27 @@ public class PostCollector : MonoBehaviour
 {
     [SerializeField] private Image postImage;
     [SerializeField] private TextMeshProUGUI textUgui;
-    [SerializeField] private Vector3 startPos;
-    [SerializeField] private Vector3 endPos;
+    [SerializeField] private float startPos;
+    [SerializeField] private float endPos;
 
-    public void ShowAnimation(Sprite image)
+    public async void ShowAnimation(Sprite image)
     {
         if(image == null) return;
-        
-        
-        gameObject.transform.DOLocalMove(endPos,
-            .25f).OnComplete(() => { ShowPostal(image);});
+
+        gameObject.transform.DOMoveY(startPos,
+            .25f).OnComplete(() =>
+        {
+            ShowPostal(image);
+            gameObject.transform.DOMoveY(endPos,
+                .25f).OnComplete(() => { });
+        }); 
+        await UniTask.Delay(5000);
+        HideAnimation();
     }
 
     public void HideAnimation()
     {
-        gameObject.transform.DOLocalMove(startPos,
+        gameObject.transform.DOMoveY(startPos,
             .25f);
     }
 

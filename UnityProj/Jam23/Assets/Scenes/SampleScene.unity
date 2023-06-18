@@ -12978,7 +12978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -218, y: 171}
+  m_AnchoredPosition: {x: -218, y: -295}
   m_SizeDelta: {x: 350, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203109681
@@ -13033,8 +13033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   postImage: {fileID: 1481115656}
   textUgui: {fileID: 740191532}
-  startPos: {x: -218, y: 171, z: 0}
-  endPos: {x: -218, y: -290, z: 0}
+  startPos: -295
+  endPos: 295
 --- !u!1001 &1205502413
 PrefabInstance:
   m_ObjectHideFlags: 0
