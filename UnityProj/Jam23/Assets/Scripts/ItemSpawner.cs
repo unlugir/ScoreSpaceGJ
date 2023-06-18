@@ -63,7 +63,7 @@ public class ItemSpawner : MonoBehaviour
         country.hasItem = true;
         var spawnedItem = Instantiate(stamp, country.stampPosition.position, Quaternion.identity, gameObject.transform);
         spawnedItem.transform.LookAt(sphereCollider.transform.position, Vector3.right);
-        stamp.country = country;
+        spawnedItem.country = country;
         
     }
 }
