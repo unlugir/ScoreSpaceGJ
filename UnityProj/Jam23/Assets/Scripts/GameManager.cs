@@ -6,6 +6,7 @@ using Cinemachine;
 using LootLocker.Requests;
 using Coherence;
 using Coherence.Toolkit;
+using Coherence.UI;
 using Cysharp.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
@@ -27,29 +28,18 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        
-        LootLockerSDKManager.StartGuestSession((response) =>
-        {
-            if (!response.success)
-            {
-                Debug.Log("error starting LootLocker session");
-
-                return;
-            }
-
-            Debug.Log("successfully started LootLocker session");
-        });
     }
     public void OnConnected(CoherenceMonoBridge bridge)
     {
         StartCoroutine(ConnectedCoroutine());
+        PlayerSession.Instance.StartSession(NetworkDialog.PlayerName);
     }
 
     IEnumerator ConnectedCoroutine()
     {
         yield return new WaitForSeconds(0.5f);
         var connection = bridge.ClientConnections.GetMine();
-        
+
         localAirplane = connection.GameObject.GetComponent<DebugController>();
         gameCamera.Follow = localAirplane.cameraFollow;
         gameCamera.LookAt = localAirplane.transform;
@@ -59,8 +49,14 @@ public class GameManager : MonoBehaviour
     {
         MenuController.Instance.HideAll();
         Destroy(localAirplane.gameObject);
+        SaveScore();
+    }
+
+    public void SaveScore()
+    {
+        PlayerSession.Instance.SendRecordToLeaderBoard(NetworkDialog.PlayerName, scoreController.score);
         scoreController.score = 0;
-        scoreController.AddNewScore(0);;
+        scoreController.AddNewScore(0);
     }
 
     private void SetPlaneStartPosition()

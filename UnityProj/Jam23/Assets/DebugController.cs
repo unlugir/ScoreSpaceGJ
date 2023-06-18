@@ -84,5 +84,6 @@ public class DebugController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         GameManager.Instance.StartMenu();
+        GameManager.Instance.SaveScore();
     }
 }
