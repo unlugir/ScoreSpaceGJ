@@ -29,13 +29,14 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        bridge.ClientConnections.OnSynced += RefreshPlayersList;
+        bridge.ClientConnections.OnCreated += RefreshPlayersList;
+        bridge.ClientConnections.OnDestroyed += RefreshPlayersList;
     }
-    private void RefreshPlayersList(CoherenceClientConnectionManager manager)
+    private void RefreshPlayersList(CoherenceClientConnection connection)
     {
         playerInGameText.text = "";
         System.Text.StringBuilder builder = new System.Text.StringBuilder();
-        foreach(var conn in manager.GetAll())
+        foreach(var conn in bridge.ClientConnections.GetAll())
         {
             if (conn.GameObject == null) continue;
             if (!conn.GameObject.TryGetComponent<DebugController>(out var controller)) continue;
