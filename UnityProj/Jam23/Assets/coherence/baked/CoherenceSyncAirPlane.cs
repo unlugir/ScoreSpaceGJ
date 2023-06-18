@@ -88,6 +88,43 @@ namespace Coherence.Generated
 		}
 	}
 
+	public class Binding_09976bcb73301c3418068123caa6a5c5_e154fdf2_7c38_42f0_871d_27bddc0943cb : StringBinding
+	{
+		private DebugController CastedUnityComponent;		
+
+		protected override void OnBindingCloned()
+		{
+			CastedUnityComponent = (DebugController)UnityComponent;
+		}
+		public override string CoherenceComponentName => "AirPlane_DebugController_1365822736174915302";
+
+		public override uint FieldMask => 0b00000000000000000000000000000001;
+
+		public override string Value
+		{
+			get => (string)(System.String)(CastedUnityComponent.playerName);
+			set => CastedUnityComponent.playerName = (System.String)(value);
+		}
+
+		protected override string ReadComponentData(ICoherenceComponentData coherenceComponent, Vector3 floatingOriginDelta)
+		{
+			var value = ((AirPlane_DebugController_1365822736174915302)coherenceComponent).playerName;
+			return value;
+		}
+		
+		public override ICoherenceComponentData WriteComponentData(ICoherenceComponentData coherenceComponent)
+		{
+			var update = (AirPlane_DebugController_1365822736174915302)coherenceComponent;
+			update.playerName = Value;
+			return update;
+		}
+
+		public override ICoherenceComponentData CreateComponentData()
+		{
+			return new AirPlane_DebugController_1365822736174915302();
+		}
+	}
+
 
 	[Preserve]
 	[AddComponentMenu("coherence/Baked/Baked 'AirPlane' (auto assigned)")]
@@ -149,6 +186,16 @@ namespace Coherence.Generated
 			else
 			{
 				logger.Error("Couldn't find binding (UnityEngine.Transform).rotation");
+			}
+			if (coherenceSync.TryGetBindingByGuid("e154fdf2-7c38-42f0-871d-27bddc0943cb", "playerName", out Binding InternalAirPlane_DebugController_1365822736174915302_AirPlane_DebugController_1365822736174915302_playerName))
+			{
+				var clone = new Binding_09976bcb73301c3418068123caa6a5c5_e154fdf2_7c38_42f0_871d_27bddc0943cb();
+				InternalAirPlane_DebugController_1365822736174915302_AirPlane_DebugController_1365822736174915302_playerName.CloneTo(clone);
+				coherenceSync.Bindings[coherenceSync.Bindings.IndexOf(InternalAirPlane_DebugController_1365822736174915302_AirPlane_DebugController_1365822736174915302_playerName)] = clone;
+			}
+			else
+			{
+				logger.Error("Couldn't find binding (DebugController).playerName");
 			}
 		}
 

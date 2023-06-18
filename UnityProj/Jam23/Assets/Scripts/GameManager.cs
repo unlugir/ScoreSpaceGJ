@@ -8,7 +8,7 @@ using Coherence;
 using Coherence.Toolkit;
 using Coherence.UI;
 using Cysharp.Threading.Tasks;
-
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
@@ -23,11 +23,26 @@ public class GameManager : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera menuCamera;
     [SerializeField] CinemachineVirtualCamera gameCamera;
 
+    [SerializeField] TMP_Text playerInGameText;
     public DebugController localAirplane;
 
     private void Awake()
     {
         Instance = this;
+        bridge.ClientConnections.OnSynced += RefreshPlayersList;
+    }
+    private void RefreshPlayersList(CoherenceClientConnectionManager manager)
+    {
+        playerInGameText.text = "";
+        System.Text.StringBuilder builder = new System.Text.StringBuilder();
+        foreach(var conn in manager.GetAll())
+        {
+            if (conn.GameObject == null) continue;
+            if (!conn.GameObject.TryGetComponent<DebugController>(out var controller)) continue;
+            builder.Append(controller.playerName);
+            builder.Append("\n");
+        }
+        playerInGameText.text = builder.ToString();
     }
     public void OnConnected(CoherenceMonoBridge bridge)
     {
@@ -61,6 +76,7 @@ public class GameManager : MonoBehaviour
 
     private void SetPlaneStartPosition()
     {
+        AudioManager.Instance.PlayTakeOffSound();
         menuCamera.Priority = 0;
         gameCamera.Priority = 10;
 
