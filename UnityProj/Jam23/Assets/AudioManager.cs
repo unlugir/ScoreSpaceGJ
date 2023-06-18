@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance { get; private set; }
     [SerializeField] AudioSource pickSound;
     [SerializeField] AudioSource takeoff;
+    [SerializeField] AudioSource explosion;
     [SerializeField] AudioSource clipPlayer;
     private void Awake()
     {
@@ -18,6 +19,10 @@ public class AudioManager : MonoBehaviour
     {
         if (!enableSound) return;
         takeoff.Play();
+    }
+    public void PlayExplosion()
+    {
+        explosion.Play();
     }
     public void PlayPickSound()
     {

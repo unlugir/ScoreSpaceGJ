@@ -52,6 +52,7 @@ public class DebugController : MonoBehaviour
         fuel = 0;
         fuelConsumption = 1;
         isAlive = false;
+        AudioManager.Instance.PlayExplosion();
         explosion.gameObject.SetActive(true);
         model.gameObject.SetActive(false);
         explosion.Play();
