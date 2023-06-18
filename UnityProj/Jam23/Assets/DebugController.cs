@@ -74,7 +74,7 @@ public class DebugController : MonoBehaviour
     }
     void UpdateFuel()
     {
-        fuelConsumption += 0.05f * Time.deltaTime;
+        fuelConsumption += 0.07f * Time.deltaTime;
         fuel -= fuelConsumption * Time.deltaTime;
         if (fuel <= 0)
         {
