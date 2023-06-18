@@ -15,24 +15,19 @@ public class RandomTrail : MonoBehaviour
     {
         Gradient gradient = new Gradient();
         GradientColorKey[] colorKeys = new GradientColorKey[2];
-        GradientAlphaKey[] alphaKeys = new GradientAlphaKey[2];
-
         // Generate random color keys
         for (int i = 0; i < 2; i++)
         {
-            colorKeys[i].color = Random.ColorHSV();
-            colorKeys[i].time = i;
+            colorKeys[i].color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.7f, 1f);
+            colorKeys[i].color = new Color(colorKeys[i].color.r,
+                colorKeys[i].color.g, colorKeys[i].color.b, 1);
         }
 
         // Generate random alpha keys
-        for (int i = 0; i < 2; i++)
-        {
-            alphaKeys[i].alpha = Random.Range(0f, 1f);
-            alphaKeys[i].time = i;
-        }
 
         gradient.colorKeys = colorKeys;
-        gradient.alphaKeys = alphaKeys;
+        gradient.alphaKeys[1].alpha = 0.25f;
+        gradient.alphaKeys[0].alpha = 0.85f;
 
         return gradient;
     }
