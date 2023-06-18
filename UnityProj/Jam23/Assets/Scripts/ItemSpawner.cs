@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using  System.Collections;
 using System.Linq;
 
 public class ItemSpawner : MonoBehaviour
@@ -32,7 +33,12 @@ public class ItemSpawner : MonoBehaviour
     public void OnContryItemPickUp(Country country)
     {
         AudioManager.Instance.PlayClip(country.GetRandomClip());
-        SpawnItemInRandomCountryExcept(country);
+        StartCoroutine(Delay(1, ()=> SpawnItemInRandomCountryExcept(country)));
+    }
+    IEnumerator Delay(float time, System.Action action)
+    {
+        yield return new WaitForSeconds(time + Random.Range(0, 2));
+        action?.Invoke();
     }
     public void OnPetrolPickUp()
     {
