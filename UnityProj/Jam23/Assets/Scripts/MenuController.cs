@@ -51,8 +51,9 @@ public class MenuController : MonoBehaviour
     {
         GameManager.Instance.StartGame();
     }
-    public void HideAll() 
+    public void HideAll()
     {
+        leaderBoardDisplayer.CloseLeaderBoard();
         menuPanel.SetActive(false);
         gameName.SetActive(false);
         foreach (var hud in gameHud)
