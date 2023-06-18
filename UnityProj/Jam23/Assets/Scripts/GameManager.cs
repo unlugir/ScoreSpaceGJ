@@ -13,10 +13,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] CoherenceMonoBridge bridge;
     [SerializeField] Transform idlePosition;
     [SerializeField] Transform startPosition;
+    [SerializeField] DebugController airplane;
+    public ScoreController scoreController;
+    [SerializeField] ItemSpawner itemSpawner;
+
     [SerializeField] CinemachineVirtualCamera menuCamera;
     [SerializeField] CinemachineVirtualCamera gameCamera;
 
-    DebugController localAirplane;
+    public DebugController localAirplane;
 
     private void Awake()
     {

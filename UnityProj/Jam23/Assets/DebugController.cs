@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using Coherence;
 using Cinemachine;
@@ -15,6 +17,7 @@ public class DebugController : MonoBehaviour
     CoherenceSync sync;
     public Transform cameraFollow; 
     public float fuel;
+    public float startFuel;
     public float fuelConsumption;
     public bool isAlive;
 
@@ -28,7 +31,7 @@ public class DebugController : MonoBehaviour
     [Command]
     public void ResetPlane()
     {
-        fuel = 100;
+        fuel = startFuel;
         isAlive = true;
         explosion.gameObject.SetActive(false);
         model.gameObject.SetActive(true);
@@ -65,6 +68,18 @@ public class DebugController : MonoBehaviour
             sync.SendCommand(typeof(DebugController), nameof(KillPlane), MessageTarget.All);
         }
     }
+
+    public void OnTriggerEnter(Collider collider)
+    {
+        Debug.Log(collider.gameObject.name);
+        if (collider.TryGetComponent<Item>(out var collectedItem))
+        {
+            collectedItem.OnItemPickedUp(this);
+            collider.gameObject.transform.DOScale(Vector3.zero, 0.2f).OnComplete(
+                ()=> Destroy(collider.gameObject));
+        }
+    }
+
     IEnumerator DeathCoroutine()
     {
         yield return new WaitForSeconds(2);
