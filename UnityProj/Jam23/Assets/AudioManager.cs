@@ -24,9 +24,10 @@ public class AudioManager : MonoBehaviour
         if (!enableSound) return;
         pickSound.Play();
     }
-    public void PlayClip(AudioClip clip)
+    public void PlayClip(Sound sound)
     {
-        clipPlayer.clip = clip;
+        clipPlayer.clip = sound.clip;
+        clipPlayer.volume = sound.volume;
         clipPlayer.Play();
     }
     

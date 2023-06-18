@@ -6,9 +6,15 @@ public class Country : MonoBehaviour
 {
     public string contryName;
     public bool hasItem;
-    [SerializeField] AudioClip[] clips;
+    public Transform stampPosition;
+    [SerializeField] Sound[] clips;
 
-    public AudioClip GetRandomClip()
+    private void Start()
+    {
+        if (stampPosition == null)
+            stampPosition = this.transform;
+    }
+    public Sound GetRandomClip()
     {
         if (clips == null || clips.Length == 0) return null;
         return clips[Random.Range(0, clips.Length)];
