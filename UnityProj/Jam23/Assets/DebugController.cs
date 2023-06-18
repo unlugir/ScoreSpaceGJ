@@ -44,7 +44,7 @@ public class DebugController : MonoBehaviour
         explosion.gameObject.SetActive(true);
         model.gameObject.SetActive(false);
         explosion.Play();
-        if(sync.IsMyClientConnection)
+        if(sync != null && sync.IsMyClientConnection)
             StartCoroutine(DeathCoroutine());
     }
 
