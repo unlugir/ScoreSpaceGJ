@@ -15,9 +15,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] CoherenceMonoBridge bridge;
     [SerializeField] Transform idlePosition;
     [SerializeField] Transform startPosition;
-    [SerializeField] DebugController airplane;
     public ScoreController scoreController;
     [SerializeField] ItemSpawner itemSpawner;
+    [SerializeField] FuelPresenter fuelPresenter;
 
     [SerializeField] CinemachineVirtualCamera menuCamera;
     [SerializeField] CinemachineVirtualCamera gameCamera;
@@ -59,6 +59,8 @@ public class GameManager : MonoBehaviour
     {
         MenuController.Instance.HideAll();
         Destroy(localAirplane.gameObject);
+        scoreController.score = 0;
+        scoreController.AddNewScore(0);;
     }
 
     private void SetPlaneStartPosition()
@@ -90,7 +92,7 @@ public class GameManager : MonoBehaviour
     public void StartMenu()
     {
         SetPlaneIdlePosition();
-        
+        fuelPresenter.DisplayFuelData();
         localAirplane.GetComponent<CoherenceSync>().SendCommand(typeof(DebugController), nameof(localAirplane.ResetPlane), MessageTarget.All);
         StartCoroutine(Delay(1f, MenuController.Instance.ShowMenu));
     }

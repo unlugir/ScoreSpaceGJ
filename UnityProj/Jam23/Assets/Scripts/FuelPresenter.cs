@@ -7,10 +7,11 @@ public class FuelPresenter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _textDisplayer;
     [SerializeField] private Image _fuelDisplayer;
     
-    void Start()
+    public void DisplayFuelData()
     {
         if (_textDisplayer == null 
-            || _fuelDisplayer == null)
+            || _fuelDisplayer == null
+            || GameManager.Instance.localAirplane == null)
         {
             gameObject.SetActive(false);
             this.enabled = false;
@@ -25,6 +26,8 @@ public class FuelPresenter : MonoBehaviour
 
     private void LateUpdate()
     {
+        if(GameManager.Instance.localAirplane == null) return;
+        
         _fuelDisplayer.fillAmount = GameManager.Instance.localAirplane.fuel / GameManager.Instance.localAirplane.startFuel;
         _textDisplayer.text = $"{(int)GameManager.Instance.localAirplane.fuel}/{(int)GameManager.Instance.localAirplane.startFuel}";
     }
