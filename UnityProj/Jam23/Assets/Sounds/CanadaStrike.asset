@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b869b12b7e3dcb4a9aec694d04b321d, type: 3}
   m_Name: CanadaStrike
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
+  clip: {fileID: 8300000, guid: ee431451c710ba247bac194a99f0ad35, type: 3}
   volume: 0.5
