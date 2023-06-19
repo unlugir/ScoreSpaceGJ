@@ -1979,7 +1979,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 675407065}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 6c7045e8d45ff8d4eaae6a83163aa05e, type: 2}
   post:
   - {fileID: 21300000, guid: 24bc6fdba3fdd6a409e3c477503fe2b6, type: 3}
 --- !u!1001 &95348153
@@ -21451,7 +21451,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 1355604873}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: bdfd92a79d849fc4ab0a009314bf01d6, type: 2}
   post:
   - {fileID: 21300000, guid: d46bd8fcee120154197cf53252adb8cc, type: 3}
 --- !u!1 &1813606244
@@ -22549,7 +22549,8 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 668811432}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 7d476821da07ddf40ac2686a71a76d0a, type: 2}
+  - {fileID: 11400000, guid: bdb7260d6db2c0943b713465dda0fe1c, type: 2}
   post:
   - {fileID: 21300000, guid: 80339533e2c182f4a9b06543debd7506, type: 3}
 --- !u!1 &1931744233
@@ -22620,7 +22621,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 24129080}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 064b573d982aebe419b96dc5dd81b041, type: 2}
   post:
   - {fileID: 21300000, guid: c5662f58946182c4ba18d786d80007ab, type: 3}
   - {fileID: 21300000, guid: b1a142fddae07fe4e987eaa5883ca045, type: 3}
