@@ -1361,7 +1361,8 @@ MonoBehaviour:
   stampPosition: {fileID: 2042713254}
   clips:
   - {fileID: 11400000, guid: 0309c7b1baa0b2a47a9032dedab0990c, type: 2}
-  post: {fileID: 21300000, guid: 6aae67b1f141658409553a4beca06eb3, type: 3}
+  post:
+  - {fileID: 21300000, guid: 6aae67b1f141658409553a4beca06eb3, type: 3}
 --- !u!1 &60134586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +1980,8 @@ MonoBehaviour:
   stampPosition: {fileID: 675407065}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: 24bc6fdba3fdd6a409e3c477503fe2b6, type: 3}
+  post:
+  - {fileID: 21300000, guid: 24bc6fdba3fdd6a409e3c477503fe2b6, type: 3}
 --- !u!1001 &95348153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2624,7 +2626,8 @@ MonoBehaviour:
   stampPosition: {fileID: 1116215522}
   clips:
   - {fileID: 11400000, guid: 709e785474094c7439702a911594093c, type: 2}
-  post: {fileID: 21300000, guid: c672344d2a73ab44fa7336012beeef72, type: 3}
+  post:
+  - {fileID: 21300000, guid: c672344d2a73ab44fa7336012beeef72, type: 3}
 --- !u!1001 &144026886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2910,7 +2913,8 @@ MonoBehaviour:
   stampPosition: {fileID: 34029236}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: 060da220281a0fd478ba140f14bda40c, type: 3}
+  post:
+  - {fileID: 21300000, guid: 060da220281a0fd478ba140f14bda40c, type: 3}
 --- !u!1 &188202617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,7 +3874,8 @@ MonoBehaviour:
   stampPosition: {fileID: 548104738}
   clips:
   - {fileID: 11400000, guid: de03e25d203f28b4bae07f5a10d7e7e8, type: 2}
-  post: {fileID: 21300000, guid: 526a7226581ed0343a692de6101e161e, type: 3}
+  post:
+  - {fileID: 21300000, guid: 526a7226581ed0343a692de6101e161e, type: 3}
 --- !u!1 &245483251
 GameObject:
   m_ObjectHideFlags: 0
@@ -6254,7 +6259,8 @@ MonoBehaviour:
   stampPosition: {fileID: 466033091}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: ddcb075dd60e1164f8060c401fbd9cf1, type: 3}
+  post:
+  - {fileID: 21300000, guid: ddcb075dd60e1164f8060c401fbd9cf1, type: 3}
 --- !u!1 &481326770
 GameObject:
   m_ObjectHideFlags: 0
@@ -7551,7 +7557,8 @@ MonoBehaviour:
   stampPosition: {fileID: 208331007}
   clips:
   - {fileID: 11400000, guid: 75446f492d9f5a542b26f03372433036, type: 2}
-  post: {fileID: 21300000, guid: b39a0da50ce60b840a8b6ee5fd476d4d, type: 3}
+  post:
+  - {fileID: 21300000, guid: b39a0da50ce60b840a8b6ee5fd476d4d, type: 3}
 --- !u!1 &609266147
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,7 +7957,8 @@ MonoBehaviour:
   stampPosition: {fileID: 1978623352}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: d149b282e7f20904b9c428e150be8a86, type: 3}
+  post:
+  - {fileID: 21300000, guid: d149b282e7f20904b9c428e150be8a86, type: 3}
 --- !u!1001 &640760078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10304,7 +10312,8 @@ MonoBehaviour:
   stampPosition: {fileID: 1758466660}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
+  post:
+  - {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
 --- !u!1 &885467544
 GameObject:
   m_ObjectHideFlags: 0
@@ -14346,7 +14355,8 @@ MonoBehaviour:
   clips:
   - {fileID: 11400000, guid: d500c7ceef0cfb54da4be58a5ca49fad, type: 2}
   - {fileID: 11400000, guid: b73c03e798293dd4c9e0bea756857ca7, type: 2}
-  post: {fileID: 21300000, guid: 2a42a5b7279a732498eaafdefb1f0fb9, type: 3}
+  post:
+  - {fileID: 21300000, guid: 2a42a5b7279a732498eaafdefb1f0fb9, type: 3}
 --- !u!1 &1206148076
 GameObject:
   m_ObjectHideFlags: 0
@@ -14538,7 +14548,8 @@ MonoBehaviour:
   stampPosition: {fileID: 1557971840}
   clips:
   - {fileID: 11400000, guid: df6fc1039bd3f5047853585af70b03f6, type: 2}
-  post: {fileID: 21300000, guid: 8c165d18a16f88b4095277f84c1f11c4, type: 3}
+  post:
+  - {fileID: 21300000, guid: 8c165d18a16f88b4095277f84c1f11c4, type: 3}
 --- !u!1 &1226856803
 GameObject:
   m_ObjectHideFlags: 0
@@ -15089,7 +15100,8 @@ MonoBehaviour:
   stampPosition: {fileID: 124436093}
   clips:
   - {fileID: 11400000, guid: 8d14c34c57da2bb4381756cc9375c8f7, type: 2}
-  post: {fileID: 21300000, guid: e8dd07daa8e4f89489d1997504b6bb50, type: 3}
+  post:
+  - {fileID: 21300000, guid: e8dd07daa8e4f89489d1997504b6bb50, type: 3}
 --- !u!1 &1284759190
 GameObject:
   m_ObjectHideFlags: 0
@@ -18961,7 +18973,8 @@ MonoBehaviour:
   stampPosition: {fileID: 1314674213}
   clips:
   - {fileID: 11400000, guid: 7ea435189a744a64a9d96feeef47577d, type: 2}
-  post: {fileID: 21300000, guid: 38b13ae6489cd784f92e5987a4433eff, type: 3}
+  post:
+  - {fileID: 21300000, guid: 38b13ae6489cd784f92e5987a4433eff, type: 3}
 --- !u!1 &1605466765
 GameObject:
   m_ObjectHideFlags: 0
@@ -19030,8 +19043,9 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 398483009}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: 3ff453bfac50cf04d947e3785334007e, type: 3}
+  - {fileID: 11400000, guid: 34517d616cbf23f43a9430375db6c297, type: 2}
+  post:
+  - {fileID: 21300000, guid: 3ff453bfac50cf04d947e3785334007e, type: 3}
 --- !u!1001 &1621114894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21438,7 +21452,8 @@ MonoBehaviour:
   stampPosition: {fileID: 1355604873}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: d46bd8fcee120154197cf53252adb8cc, type: 3}
+  post:
+  - {fileID: 21300000, guid: d46bd8fcee120154197cf53252adb8cc, type: 3}
 --- !u!1 &1813606244
 GameObject:
   m_ObjectHideFlags: 0
@@ -22464,7 +22479,8 @@ MonoBehaviour:
   stampPosition: {fileID: 955962040}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: 7eb9613c36d0a27449c42b64458fbd3c, type: 3}
+  post:
+  - {fileID: 21300000, guid: 7eb9613c36d0a27449c42b64458fbd3c, type: 3}
 --- !u!1 &1931050027
 GameObject:
   m_ObjectHideFlags: 0
@@ -22534,7 +22550,8 @@ MonoBehaviour:
   stampPosition: {fileID: 668811432}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: 80339533e2c182f4a9b06543debd7506, type: 3}
+  post:
+  - {fileID: 21300000, guid: 80339533e2c182f4a9b06543debd7506, type: 3}
 --- !u!1 &1931744233
 GameObject:
   m_ObjectHideFlags: 0
@@ -22604,7 +22621,9 @@ MonoBehaviour:
   stampPosition: {fileID: 24129080}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: c5662f58946182c4ba18d786d80007ab, type: 3}
+  post:
+  - {fileID: 21300000, guid: c5662f58946182c4ba18d786d80007ab, type: 3}
+  - {fileID: 21300000, guid: b1a142fddae07fe4e987eaa5883ca045, type: 3}
 --- !u!1 &1945457592
 GameObject:
   m_ObjectHideFlags: 0
@@ -23727,7 +23746,8 @@ MonoBehaviour:
   stampPosition: {fileID: 420103443}
   clips:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
-  post: {fileID: 21300000, guid: f5f422ff635d4c44cb6dc1589af92d54, type: 3}
+  post:
+  - {fileID: 21300000, guid: f5f422ff635d4c44cb6dc1589af92d54, type: 3}
 --- !u!1 &2033832988
 GameObject:
   m_ObjectHideFlags: 0

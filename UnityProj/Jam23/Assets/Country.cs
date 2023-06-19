@@ -8,7 +8,13 @@ public class Country : MonoBehaviour
     public bool hasItem;
     public Transform stampPosition;
     [SerializeField] Sound[] clips;
-    public Sprite post;
+    public List<Sprite> post;
+
+    public Sprite GetRandomPost()
+    {
+        if (post == null || post.Count == 0) return null;
+        return post[Random.Range(0, post.Count)];
+    }
 
     private void Start()
     {

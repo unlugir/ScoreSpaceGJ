@@ -33,7 +33,7 @@ public class ItemSpawner : MonoBehaviour
 
     public void OnContryItemPickUp(Country country)
     {
-        _postCollector.ShowAnimation(country.post);
+        _postCollector.ShowAnimation(country.GetRandomPost());
         AudioManager.Instance.PlayClip(country.GetRandomClip());
         StartCoroutine(Delay(1, ()=> SpawnItemInRandomCountryExcept(country)));
     }
