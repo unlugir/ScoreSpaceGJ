@@ -23,7 +23,7 @@ public class FuelPresenter : MonoBehaviour
         
         _fuelDisplayer.fillAmount = GameManager.Instance.localAirplane.fuel / GameManager.Instance.localAirplane.startFuel;
         _textDisplayer.text = $"{GameManager.Instance.localAirplane.fuel}/{GameManager.Instance.localAirplane.startFuel}";
-        _consumText.text = $"{GameManager.Instance.localAirplane.fuelConsumption}";
+        _consumText.text = $"-{GameManager.Instance.localAirplane.fuelConsumption}";
     }
 
     private void LateUpdate()
@@ -32,6 +32,6 @@ public class FuelPresenter : MonoBehaviour
         
         _fuelDisplayer.fillAmount = GameManager.Instance.localAirplane.fuel / GameManager.Instance.localAirplane.startFuel;
         _textDisplayer.text = $"{(int)GameManager.Instance.localAirplane.fuel}/{(int)GameManager.Instance.localAirplane.startFuel}";
-        _consumText.text = $"{System.Math.Round((double)GameManager.Instance.localAirplane.fuelConsumption, 1)}";
+        _consumText.text = $"-{System.Math.Round((double)GameManager.Instance.localAirplane.fuelConsumption, 1)}";
     }
 }
