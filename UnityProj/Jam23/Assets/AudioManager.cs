@@ -10,9 +10,17 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource takeoff;
     [SerializeField] AudioSource explosion;
     [SerializeField] AudioSource clipPlayer;
+    [SerializeField] UnityEngine.UI.Slider volumeSlider;
     private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
+        volumeSlider.onValueChanged.AddListener((v) =>
+        {
+            AudioListener.volume = v;
+        });
     }
 
     public void PlayTakeOffSound()
