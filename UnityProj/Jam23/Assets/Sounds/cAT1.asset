@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: cAT1
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: e2684de11d6b9ad488a0f1cc07e79f77, type: 3}
-  volume: 0.3
+  volume: 0.24

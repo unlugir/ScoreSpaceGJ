@@ -9974,7 +9974,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.288
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10521,6 +10521,8 @@ MonoBehaviour:
   post:
   - {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
   - {fileID: 21300000, guid: cf457f75b32d76144a5521622a32cf07, type: 3}
+  - {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
+  - {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
 --- !u!1 &885467544
 GameObject:
   m_ObjectHideFlags: 0
