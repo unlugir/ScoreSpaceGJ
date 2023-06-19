@@ -90,6 +90,7 @@ public class DebugController : MonoBehaviour
         if (collider.TryGetComponent<Item>(out var collectedItem))
         {
             collectedItem.OnItemPickedUp(this);
+            collider.gameObject.transform.DOKill();
             collider.gameObject.transform.DOScale(Vector3.zero, 0.2f).OnComplete(
                 ()=> Destroy(collider.gameObject));
         }

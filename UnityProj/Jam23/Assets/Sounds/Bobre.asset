@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bobre
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: e9e6aadea5716ee4f8cd62a94560cfd9, type: 3}
-  volume: 0.5
+  volume: 0.4

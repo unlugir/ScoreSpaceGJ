@@ -12,20 +12,19 @@ public class PostCollector : MonoBehaviour
     [SerializeField] private float endPos;
     [SerializeField] private GameObject jumpPos;
 
-    public async void ShowAnimation(Sprite image)
+    Sequence seq;
+    public void ShowAnimation(Sprite image)
     {
         if(image == null) return;
 
-        gameObject.transform.DOKill();
-        gameObject.transform.DOMoveY(startPos,
-            .25f).OnComplete(() =>
-        {
-            ShowPostal(image);
-            gameObject.transform.DOMoveY(jumpPos.transform.position.y,
-                .25f).OnComplete(() => { });
-        }); 
-        await UniTask.Delay(5000);
-        HideAnimation();
+        if (seq != null)
+            seq.Kill();
+        seq = DOTween.Sequence();
+        seq.Append(gameObject.transform.DOMoveY(startPos, .25f));
+        seq.AppendCallback(()=> ShowPostal(image));
+        seq.Append(gameObject.transform.DOMoveY(jumpPos.transform.position.y, .25f));
+        seq.AppendInterval(5);
+        seq.Append(gameObject.transform.DOMoveY(startPos, .25f));
     }
 
     public void HideAnimation()
