@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Skibidi
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: ac535b68b2e7c1549beb1a5e0aa3adbd, type: 3}
-  volume: 0.07
+  volume: 0.03
