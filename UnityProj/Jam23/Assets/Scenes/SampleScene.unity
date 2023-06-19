@@ -10311,7 +10311,7 @@ MonoBehaviour:
   hasItem: 0
   stampPosition: {fileID: 1758466660}
   clips:
-  - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
+  - {fileID: 11400000, guid: 9de3f36d3bb0c3543b0197e2921bb05a, type: 2}
   post:
   - {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
   - {fileID: 21300000, guid: cf457f75b32d76144a5521622a32cf07, type: 3}
