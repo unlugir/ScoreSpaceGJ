@@ -10314,6 +10314,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8fa2a0dc24d6b564e83a9253d0e12b98, type: 2}
   post:
   - {fileID: 21300000, guid: e63d9a03afc69ce44ae8c94510b5669b, type: 3}
+  - {fileID: 21300000, guid: f61185118c02c944181f32acd6418e8b, type: 3}
 --- !u!1 &885467544
 GameObject:
   m_ObjectHideFlags: 0
